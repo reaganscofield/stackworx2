@@ -30,7 +30,8 @@ class App extends Component {
     super(props);
 
     this.state = {
-      todos
+      todos,
+	completed: 'Complete'
     };
     // binding onAddTodo From Form Comp
     this.handleAddTodo = this.handleAddTodo.bind(this);
@@ -41,7 +42,9 @@ class App extends Component {
     this.setState({todos: [...this.state.todos, todo]});
   }
 
-
+addEvent(){
+	console.log("hi");
+}
 
   render() {
     return (
@@ -67,6 +70,8 @@ class App extends Component {
                   {todo.todoPriority}</span></small>
                 </h4>
                 <p>{todo.todoDescription}</p>
+		<button onClick={this.addEvent.bind(this)} class="btn btn-info"
+		  >{this.state.complete}</button>
               </li>
           )}
         </ul>
