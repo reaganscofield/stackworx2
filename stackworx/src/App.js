@@ -31,7 +31,7 @@ class App extends Component {
 
     this.state = {
       todos,
-	completed: 'Complete'
+      completed: 'Complete'
     };
     // binding onAddTodo From Form Comp
     this.handleAddTodo = this.handleAddTodo.bind(this);
@@ -43,7 +43,7 @@ class App extends Component {
   }
 
 addEvent(){
-	console.log("hi");
+  console.log("hi");
 }
 
   render() {
