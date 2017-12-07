@@ -72,8 +72,7 @@ class FormComponent extends Component {
                           id="inputTodoPriority"
                           value={this.state.todoPriority}
                           onChange={this.handleInputChange}>
-                  <option>Completed</option>
-                  <option>InComplete</option>
+                  <option>InCompleted</option>
                 </select>
               </div>
             </div>
